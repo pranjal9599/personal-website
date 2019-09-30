@@ -1,42 +1,36 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import { css } from '@emotion/core';
+import { Link } from 'gatsby';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+const Header = () => (
+<header css={css`
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #fffffff0;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    padding: 30px 0px;
+    z-index: 10000;
+    height: 100px;
+
+    @media(max-width: 480px) {
+      height: 75px;
+    }
+
+    top: 0;
+    a { 
+      padding: 0px 10px;
+      text-decoration: none;
+    }
+  `}>
+    <Link to="/">Projects</Link> 
+    <Link to="/blog">Blog</Link> 
+    <Link to="/contact">Contact</Link>
+    <a href="https://twitter.com/pranjal9599">Twitter</a> 
+    <a href="https://github.com/pranjal9599">Github</a> 
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;
