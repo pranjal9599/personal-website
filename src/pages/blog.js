@@ -20,7 +20,6 @@ const BlogPost = ({post}) => (
 
         @media ( max-width: 480px) {
             grid-template-columns: 1fr;
-            background-color: red;
             img {
                 display: none;
             }
