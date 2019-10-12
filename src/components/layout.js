@@ -1,6 +1,7 @@
 import React from 'react';
 import {Global, css} from '@emotion/core';
 import Header from './header';
+import Helmet from 'react-helmet';
 
 const Layout = ({children}) => (
   <>
@@ -8,6 +9,7 @@ const Layout = ({children}) => (
       * {
         box-sizing: border-box;
       }
+
 
       html,
       body {
@@ -26,6 +28,16 @@ const Layout = ({children}) => (
       a {
         color: #000;
       }
+
+	  @media (prefers-color-scheme: dark) {
+		body {
+			background-color: #000;
+			color: #fff;
+		}
+		
+		a { color: #fff; }
+
+	  }
     `} />
     <Header />
 
@@ -37,6 +49,9 @@ const Layout = ({children}) => (
     `}>
     {children}
     </main>
+    <Helmet>
+      <script src="http://localhost:3000/analytics.js"></script>
+    </Helmet>
   </>
 )
 

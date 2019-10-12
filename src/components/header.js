@@ -23,6 +23,10 @@ const Header = () => (
       padding: 0px 10px;
       text-decoration: none;
     }
+
+	@media(prefers-color-scheme: dark) {
+		background: #000000e0;
+	}
   `}>
     <Link to="/">Projects</Link> 
     <Link to="/blog">Blog</Link> 
