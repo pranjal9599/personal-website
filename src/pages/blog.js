@@ -1,6 +1,5 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import {Link} from 'gatsby';
 import Image from 'gatsby-image';
 import Helmet from 'react-helmet';
 

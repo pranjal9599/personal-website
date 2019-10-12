@@ -1,7 +1,6 @@
 import React from 'react';
 import {Global, css} from '@emotion/core';
 import Header from './header';
-import Helmet from 'react-helmet';
 
 const Layout = ({children}) => (
   <>
@@ -49,9 +48,6 @@ const Layout = ({children}) => (
     `}>
     {children}
     </main>
-    <Helmet>
-      <script src="http://localhost:3000/analytics.js"></script>
-    </Helmet>
   </>
 )
 
