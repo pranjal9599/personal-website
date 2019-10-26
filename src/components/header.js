@@ -31,8 +31,8 @@ const Header = () => (
     <Link to="/">Projects</Link> 
     <Link to="/blog">Blog</Link> 
     <Link to="/contact">Contact</Link>
-    <a href="https://twitter.com/pranjal9599">Twitter</a> 
-    <a href="https://github.com/pranjal9599">Github</a> 
+    <a target="_blank" href="https://twitter.com/pranjal9599">Twitter</a> 
+    <a target="_blank" href="https://github.com/pranjal9599">Github</a> 
   </header>
 )
 
