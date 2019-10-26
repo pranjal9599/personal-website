@@ -46,6 +46,10 @@ const BlogPost = ({post}) => (
             </h5>
             <p css={css`
                 color: #222;    
+				  @media (prefers-color-scheme: dark) {
+				  	color: #ffffff;
+				  }
+
             `}>{post.description}</p>
             <span to={post.slug} css={css`
                 text-decoration: none; 
