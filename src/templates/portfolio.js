@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql} from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Helmet from 'react-helmet';
@@ -17,14 +17,14 @@ export const query = graphql`
     }
 `;
 
-const Post = ({data}) => (
+const Portfolio = ({ data }) => (
     <Layout>
         <Helmet>
-            <title>{data.mdx.frontmatter.title} - Pranjal Saxena</title>
+            <title>{data.mdx.frontmatter.title}</title>
         </Helmet>
         <h1>{data.mdx.frontmatter.title}</h1>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </Layout>
 )
 
-export default Post;
+export default Portfolio;

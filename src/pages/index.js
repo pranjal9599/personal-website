@@ -1,5 +1,5 @@
 import React from "react"
-import {css} from '@emotion/core';
+import { css } from '@emotion/core';
 
 import Layout from "../components/layout"
 import ProjectPreview from '../components/Project-Preview';
@@ -17,11 +17,13 @@ const IndexPage = () => {
           display: flex;
           flex-direction: column;
           //margin-top: -100px;
-          height: calc(100vh - 100px);
+          height: calc(70vh - 100px);
           justify-content: center;
+          // align-items: center;
+          // text-align: center;
       `}>
         <h1 css={css`
-          font-size: 6rem;
+          font-size: 4rem;
           font-weight: 800;
           padding-bottom: 20px;
 
@@ -29,19 +31,19 @@ const IndexPage = () => {
             font-size: 4rem;
           }
 
-        `}>Pranjal Saxena.</h1>
+        `}>Pranjal Saxena</h1>
         <h2 css={css`
           font-weight: 300; 
-          font-size: 3rem;
+          font-size: 2rem;
 
           @media(max-width: 480px) {
             font-size: 1.5rem;
           }
-        `}>Designer − Developer − Maker</h2>
+        `}>Programmer — Designer</h2>
       </section>
-        {projects.map(project => 
-          <ProjectPreview project={project} key={project.slug}/>
-        )}
+      {projects.map(project =>
+        <ProjectPreview project={project} key={project.slug} />
+      )}
     </Layout>
   )
 }

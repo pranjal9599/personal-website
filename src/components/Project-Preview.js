@@ -1,5 +1,5 @@
 import React from 'react'
-import {css} from '@emotion/core';
+import { css } from '@emotion/core';
 import Image from 'gatsby-image';
 import { Link } from 'gatsby';
 
@@ -13,15 +13,22 @@ const ProjectPreview = ({ project }) => (
                 font-size: 3rem;   
                 margin-top: 10px;
                 margin-bottom: 30px;
+                @media(max-width: 480px) {
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
             `}>{project.title}</h3>
-        </Link>
 
-        <Image fluid={project.image.childImageSharp.fluid} css={css`
+            <Image fluid={project.image.childImageSharp.fluid} css={css`
             width: 100%;
             height: 450px;
+            @media(max-width: 480px) {
+                height: 250px;
+              }
             object-fit: cover;
         `}
-        alt={project.title} fadeIn/>
+                alt={project.title} fadeIn />
+        </Link>
     </div>
 )
 
