@@ -52,9 +52,9 @@ function About() {
                     }
                 }
             `}>
-                    <a href="#">Twitter</a> /
-                    <a href="#">Github</a> /
-                    <a href="#">Dribbble</a>
+                    <a href="https://twitter.com/pranjal9599">Twitter</a> /
+                    <a href="https://github.com/pranjal9599">Github</a> /
+                    <a href="https://dribbble.com/pranjal9599">Dribbble</a>
                 </div>
             </div>
         </Layout>

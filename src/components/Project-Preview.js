@@ -7,7 +7,7 @@ import { Link } from 'gatsby';
 const ProjectPreview = ({ project }) => (
     <div css={css` padding: 50px 0px; border-bottom: 1px solid #99999911;`}>
         <span css={css` color: #999; `}>{project.subtitle}</span>
-        <Link to={project.slug} css={css`text-decoration: none;`}>
+        <Link to={"/" + project.slug} css={css`text-decoration: none;`}>
             <h3 css={css`
                 font-weight: 500;
                 font-size: 3rem;   
@@ -27,7 +27,7 @@ const ProjectPreview = ({ project }) => (
               }
             object-fit: cover;
         `}
-                alt={project.title} fadeIn />
+                alt={project.title} />
         </Link>
     </div>
 )

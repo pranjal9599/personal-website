@@ -39,7 +39,7 @@ const BlogPost = ({ post }) => (
             css={css`
                 text-decoration: none;
             `}
-            to={post.slug}
+            to={"/" + post.slug}
         >
             <h2 css={css` 
                 font-weight: 600;    

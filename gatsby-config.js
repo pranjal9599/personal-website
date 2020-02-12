@@ -21,7 +21,7 @@ module.exports = {
           default: require.resolve('./src/components/layout.js')
         },
         gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
-        plugins: [{ resolve: 'gatsby-remark-images'}]
+        plugins: [{ resolve: 'gatsby-remark-images' }]
       }
     },
     {
@@ -40,6 +40,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-82759468-1",
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
